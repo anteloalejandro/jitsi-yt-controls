@@ -36,3 +36,5 @@ function yt_fix_observer() {
 
   return observer.disconnect;
 }
+
+yt_fix_observer();
