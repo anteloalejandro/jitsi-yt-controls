@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YT controls fix demo</title>
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color-scheme: dark light;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="iframe-container"></div> 
+    <script src="./fix.js"></script>
+    <script>
+      yt_fix_observer(); // start observer
+      let container = document.querySelector("#iframe-container");
+      let iframe = document.createElement('div');
+      // iframe **without** controls
+      iframe.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/olhyPaDN_l0?si=nXjD9_MDPabi7Bdg&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+      iframe = iframe.firstElementChild;
+      container.append(iframe);
+    </script>
+  </body>
+</html>
