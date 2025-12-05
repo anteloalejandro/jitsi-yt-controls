@@ -1,5 +1,13 @@
 # Jitsi YT controls
 
+Firefox extension to enable youtube controls regardless of who started sharing the video.
+
+Specially usefull to let everyone choose their settings independently, like resolution and subtitles.
+
+## How to use
+
+Install the extension from <https://addons.mozilla.org>, it should work automatically.
+
 ## Attributions
 
 Icons adapted from:
